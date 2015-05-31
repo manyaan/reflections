@@ -40,3 +40,6 @@ git --version
 git checkout <version>
 git commit
 git diff <old-version> <new-version>
+git clone <path to repository>
+git clone username@host:<path to repository>
+
