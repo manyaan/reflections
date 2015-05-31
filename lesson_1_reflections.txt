@@ -1,0 +1,42 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+- diff listed out the lines that were different in the new file when compared to the old one.
+- The exact line numbers where listed
+- It showed the lines that were removed and added in the new file
+- The difference listed was unified difference between the files line by line.
+
+How could you have easy access to the entire history of a file make you a more efficient programmer in the long term?
+- It will allow me to roll back my changes to any old version that I need.
+- History will help me to find the code that could be a possible bug
+- It will help me to identity when, what and who made the change?
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git,
+vs having versions automatically saved, like Google docs does?
+- Manually choosing commits will make it easy to understand the difference between various logical changes.
+- Auto save by Google docs will create unwanted versions which are may not be logically different from each other, and hence
+makes it difficult to compare two different logically different files.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, 
+while others, like Google Docs, treat each file separately?
+- Because the files are interelated and the one change in one file might affect other files.
+- Saving multiple files in commit can help to track changes across various files between two different versions.
+
+How can you use the commands git log and git diff to view the history of files?
+- git log will show the history of commits version by version
+- git log will list from the latest to the oldest version
+- git difference will show the lines added, updated and deleted between two versions in the history list.
+
+How might using version control make you more confident to make changes that could break something?
+- Git log can help me to list down all the versions
+- Git checkout can revert the code a particular version in the past, this will help to identify the buggy version
+
+Now that you have your workspace set up, what do you want to try using Git for?
+- I would like to create a project, save it to github
+- Clone the project to local
+- Try out branching and tagging
+
+What are the commands that I learnt in this lesson?
+git log
+git --version
+git checkout <version>
+git commit
+git diff <old-version> <new-version>
