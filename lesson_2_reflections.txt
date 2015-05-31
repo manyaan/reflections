@@ -1,0 +1,7 @@
+What happens when you initialize a repository? Why do you need to do it?
+- git creates a new repository under the name of the folder
+- git does not add any commits to the repository, as the user may not want to commit all the files to the repository
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+- Staging area is an intermediate area which will hold all the changes that needs to be committed to the repository.
+- Only those files which are added to staging area can be committed to the repository.
