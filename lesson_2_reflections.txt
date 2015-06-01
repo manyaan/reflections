@@ -5,3 +5,42 @@ What happens when you initialize a repository? Why do you need to do it?
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 - Staging area is an intermediate area which will hold all the changes that needs to be committed to the repository.
 - Only those files which are added to staging area can be committed to the repository.
+
+How can you use the staging area to make sure you have one commit per logical change?
+- Files that were modified and are ready for committing to repository can be added to staging area.
+- Stagging area will hold all the files which are ready for commit.
+- Files can be added per logical change
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+- Branches will help to maintain different versions of the same code base for different purposes.
+- Branches can be later merged into the master branch
+
+How do the diagrams help you visualize the branch structure?
+- It helps to know from which point the branches were created.
+- It helps to traceback to the point in the master branch from where the branch was created
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+- It merges two branches into one and creates one single branch of all the versions from the merged branches and creates a linear history of commits.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+- Pros of Git's automatic commit.
+	-- shows the differences between HEAD revision of current branch, merged common ancestor and the branch which is being merged from.
+- Cons of Git's automatic commit.
+	-- It only compares that lines that are different in the two branches that are being merged, other changes are not detected.
+Always doing manual merge could be tedious, as the developer needs to know the lines that are different in the two branches that are being merged
+
+git init
+git status
+git add <file_name_with_extension>
+git diff [Compares the current working copy with the one which is staged]
+git diff [staged [Compares the version which is stagged and the head version in the repository]
+git log -n1 [lists the log according to the number of commits specified after -n]
+git merge <from-branch> <to-branch>
+git commit
+git merge --abort
+git branch
+git branch <branch_name>
+git branch -d <branch_name> [Deletes specified branch]
+git checkout <branch_name>
+git checkout <version_id>
+git clone username@host:<repository_path>
