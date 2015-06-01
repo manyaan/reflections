@@ -1,1 +1,41 @@
 When would you want to use a remote repository rather than keeping all your work local?
+- When I work with a team which has many members working and collaborating.
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+- Developer knows when to update his/her source code from remote repository, manual pulling will be more appropriate.
+- Automatic pulling can affect he changes made locally by the developer
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+- Fork -- GitHub will cone the respository to the developer's user account
+- Clone -- Clone will make a copy of the remote repositoty to local machine, or will cone a local respository to another repository in the local machine
+- branch - branch will copy the head revision of a branch to another branch within the same respository locally or remote
+
+what is a fast forward branch?
+- The main criteria for a fast forward merge is that, the branch you are merging into is an ancestor of the branch you are merging from.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+- It is useful in a collaborative environment, when there are changes to remote repository while there are changes in the local, storing the
+last known state of remote repository will help to merge the local changes with that of remote repository.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+- would place all the files in a shared folder and control changes manually whenever some one wants to copy.
+- Collaboration would be hard
+- maintain different version will be hard
+- rolling back a commit will be very difficult
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+- When we need to build a new feature
+- When there are bug fixes identified for a certain release
+- When there are many working on the project, then we can create one branch per person for their changes to go in.
+
+
+git commands learnt
+	git remote add origin <remote_repo_url>
+	git remote 
+	git push origin <branch_name>
+	git pull origin <branch_name>
+	git log origin/master
+	git branch -a
+	git fetch origin
+	git merge master origin/master
+
